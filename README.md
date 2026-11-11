@@ -11,7 +11,7 @@ A Retrieval-Augmented Generation (RAG) chatbot that helps lawyers and legal prof
 - Upload and process legal PDF documents
 - Ask detailed questions about the document
 - Text embeddings via the Gemini API (`gemini-embedding-001`), so no local torch model and a small deploy footprint
-- Streaming answers from Google Gemini (2.5 Flash or 2.5 Pro)
+- Streaming answers from Google Gemini (3.8 Flash or Flash Latest)
 - Chat interface with history, model/temperature/retrieval settings and page-numbered source passages
 - Shows the context chunks used for each answer
 - Built with LangChain, Streamlit and FAISS
@@ -21,7 +21,7 @@ A Retrieval-Augmented Generation (RAG) chatbot that helps lawyers and legal prof
 | Layer | Technology |
 |-------|-----------|
 | Frontend | Streamlit |
-| LLM | Google Gemini 2.5 Flash / Pro |
+| LLM | Google Gemini 3.8 Flash / Flash Latest |
 | Embeddings | Gemini Embedding 001 |
 | Vector Store | FAISS (in-memory) |
 | Orchestration | LangChain |

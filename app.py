@@ -37,8 +37,9 @@ PROMPT = ChatPromptTemplate.from_template(
 )
 
 MODELS = {
-    "Gemini 2.5 Flash (fast)": "gemini-2.5-flash",
-    "Gemini 2.5 Pro (more accurate)": "gemini-2.5-pro",
+    "Gemini 3.8 Flash (recommended)": "gemini-3.8-flash",
+    "Gemini Flash Latest": "gemini-flash-latest",
+    "Gemini 3.5 Flash-Lite (fast)": "gemini-3.5-flash-lite",
 }
 
 st.markdown(

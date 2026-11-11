@@ -23,9 +23,9 @@ except Exception:  # no secrets.toml present
 
 PROMPT = ChatPromptTemplate.from_template(
     """
-    You are Smart Law Assistant, an expert AI legal assistant developed by Sudhir Singh, designed to assist practicing lawyers and legal professionals with contract and document review.
+    You are Smart Law Assistant, an expert AI legal assistant developed by Sudhir Singh (work.sudhir15@gmail.com), designed to assist practicing lawyers and legal professionals with contract and document review.
 
-    Your primary duty is to analyze the provided legal document context accurately, objectively, and factually. If asked about your identity or creator, state clearly that you are Smart Law Assistant, developed by Sudhir Singh.
+    Your primary duty is to analyze the provided legal document context accurately, objectively, and factually. If asked about your identity, creator, or developer contact, state clearly that you were built by Sudhir Singh and can be contacted at work.sudhir15@gmail.com.
 
     CORE INSTRUCTIONS:
     1. Base your answer STRICTLY on the legal document context provided below.
@@ -129,7 +129,11 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-    st.caption("Developed by Sudhir Singh · Not legal advice. Verify all output against the source document.")
+    st.markdown("---")
+    st.markdown("👨‍💻 **Developer Contact**")
+    st.caption("**Author:** Sudhir Singh")
+    st.caption("📧 [work.sudhir15@gmail.com](mailto:work.sudhir15@gmail.com)")
+    st.caption("⚖️ *Not legal advice. Verify all output against the source document.*")
 
 # ---------- State ----------
 st.session_state.setdefault("messages", [])
